@@ -1,45 +1,34 @@
-# Portfolio Wiktora Szczepaniaka — nowa wersja
+# Portfolio Wiktora Szczepaniaka — GitHub Pages
 
-## Aktualizacja działającej strony
+## Publikacja bez terminala
 
-Użyj `Portfolio_Wiktor_Aktualizacja.zip`. Ta mniejsza paczka korzysta z filmów, które masz już w repozytorium w folderze `assets/video`.
+1. Rozpakuj paczkę ZIP. Otwórz `index.html`, aby zobaczyć stronę na swoim komputerze. Zachowaj wszystkie foldery obok tego pliku.
+2. Zaloguj się na https://github.com. Kliknij **+ → New repository**, nazwij je `portfolio`, wybierz **Public**, zaznacz dodanie README i kliknij **Create repository**.
+3. W repozytorium wybierz **Add file → Upload files**. Przeciągnij **zawartość rozpakowanego folderu**: `index.html`, `style.css`, `script.js`, `content.json` i cały folder `assets`. `index.html` ma być bezpośrednio w repozytorium. Nie wgrywaj ZIP-a ani nadrzędnego folderu `portfolio`.
+4. Poczekaj, aż wszystkie pliki się wgrają. Kliknij **Commit changes**, zapisując je na gałęzi `main`.
+5. Otwórz **Settings → Pages**. W części **Build and deployment** ustaw **Source: Deploy from a branch**, **Branch: main**, folder **/(root)** i kliknij **Save**.
+6. Po zakończeniu publikacji w tym samym miejscu pojawi się link **Visit site**. Twój adres będzie miał postać `https://TWOJ-LOGIN.github.io/portfolio/`. Tego linku używaj w CV i wiadomościach.
 
-1. Rozpakuj ZIP.
-2. Otwórz na GitHubie to samo repozytorium, z którego działa obecne portfolio.
-3. Wybierz **Add file → Upload files**.
-4. Przeciągnij zawartość paczki: `index.html`, `style.css`, `script.js`, `content.json`, `README.md` oraz cały folder `assets`.
-5. Poczekaj na przesłanie plików i zatwierdź **Commit changes** na dotychczasowej gałęzi, zwykle `main`.
-6. Po zakończeniu publikacji odśwież stronę. Jeśli widzisz stary wygląd, użyj **Ctrl + F5**.
+Jeśli wgrywanie całego folderu przerwie się, dodawaj jego podfoldery osobno, zachowując strukturę `assets/slides`, `assets/posters`, `assets/video`. Wszystkie pojedyncze pliki w tej paczce mieszczą się w limicie 25 MiB dla wgrywania przez przeglądarkę. Łącznie jest mniej niż 100 plików.
 
-Wgrywaj zawartość paczki bez nadrzędnego folderu. `index.html` musi zastąpić dotychczasowy plik w katalogu głównym. Zastąp jednocześnie HTML, CSS i JS — pracują razem.
+## Co zawiera strona
 
-**Nie usuwaj `assets/video`.** Stare foldery `assets/slides` i `assets/posters` mogą zostać; nowa wersja ich nie używa. Jeśli masz plik `CNAME` dla własnej domeny, zachowaj go. Adres strony i ustawienia Pages nie wymagają zmian.
+- Wszystkie 22 slajdy, w oryginalnej kolejności, z zachowaną treścią i kompozycją.
+- Warstwę graficzną w SVG, z oryginalną czcionką zapisaną jako kształty. Wygląd nie zależy od fontów na komputerze odbiorcy.
+- Wszystkie 20 filmów z prezentacji jako lokalne pliki MP4. Filmy uruchamiają się po kliknięciu, mają dźwięk, przewijanie i pełny ekran. Przy uruchomieniu kolejnego filmu poprzedni zatrzymuje się.
+- Wszystkie adresy odnośników z prezentacji, w tym film na YouTube. Adres e-mail i telefon też są klikalne.
+- Nawigację O mnie / Projekty / Kontakt oraz przycisk Powiększ. Na telefonie zachowana jest kompozycja slajdów; do czytania drobnych treści użyj powiększenia albo obróć telefon.
 
-## Pełna kopia
+Linki do serwisów społecznościowych prowadzą do oryginalnych adresów. Ich dostępność zależy od autora publikacji i platformy; część platform może wymagać logowania. Film z YouTube otwiera się przez oryginalny link, tak jak w prezentacji. Pozostałe filmy odtwarzają się z plików strony, bez logowania do social mediów.
 
-`Portfolio_Wiktor_GitHub_Pages.zip` zawiera także wszystkie 20 filmów. Wybierz ją, jeśli chcesz kompletną kopię na komputerze albo stawiasz stronę od nowa. Po rozpakowaniu otwórz `index.html`; nie trzeba nic instalować.
+## Aktualizacja i najczęstsze problemy
 
-Dla nowego repozytorium, po wgraniu zawartości paczki: **Settings → Pages → Deploy from a branch → main → /(root) → Save**.
+- Aby zmienić stronę, wgraj zmienione pliki do tego samego repozytorium i zatwierdź **Commit changes**. Adres pozostaje ten sam.
+- Błąd 404: sprawdź, czy `index.html` znajduje się w katalogu głównym, a Pages wskazuje `main` i `/(root)`. Stan publikacji sprawdzisz w zakładce **Actions**.
+- Brak filmów lub grafik: sprawdź, czy cały folder `assets` został przesłany i czy nie zmieniły się jego nazwy.
+- Bezpośredni link do projektu: dopisz np. `#slajd-14` na końcu adresu portfolio.
+- Edycja `content.json` nie przebudowuje widoku automatycznie. Układ slajdów znajduje się w `assets/slides`, a aktywne filmy i linki w `index.html`.
 
-## Co się zmieniło
-
-- Układ strony zamiast skalowanych slajdów, z osobnym układem mobilnym.
-- Stałe menu: Projekty, O mnie, Specjalizacje, Social media, Wideo, Współprace, Koncepty, Moderacja, Kontakt.
-- Wyróżnione projekty: Bobbie for Shell Eco-marathon, Smak Nostalgii i Netflix.
-- Duży podgląd grafik i filmów. Kliknij materiał; zamknij przyciskiem, klawiszem Escape albo kliknięciem poza oknem.
-- Filmy odtwarzają się po kliknięciu, z dźwiękiem, przewijaniem i pełnym ekranem. Zamknięcie podglądu zatrzymuje odtwarzanie.
-- Oryginalne opisy i wyniki bez redakcji copy. Zmieniły się układ, nawigacja i etykiety przycisków.
-- Wszystkie 66 grafik, wszystkie 20 filmów i wszystkie oryginalne adresy odnośników.
-- Lokalna czcionka Rubik z prezentacji. Strona nie pobiera bibliotek ani fontów z zewnętrznych usług.
-- Poprzednie kotwice, np. `#slajd-14`, nadal kierują do odpowiadającego projektu.
-
-Bezpośrednie odnośniki do sekcji: dopisz do adresu `#bobbie`, `#smak-nostalgii`, `#netflix`, `#wideo` albo `#kontakt`.
-
-Linki do postów prowadzą do oryginalnych adresów. Dostępność publikacji zależy od platformy i autora; część serwisów wymaga logowania. Film na YouTube pozostaje zewnętrznym odnośnikiem.
-
-## Edycja
-
-Treść i struktura są w `index.html`, wygląd w `style.css`, a obsługa menu i podglądu w `script.js`. `content.json` jest zapisem materiału źródłowego; jego zmiana sama nie przebudowuje strony.
-
-Dokumentacja GitHub Pages:
-https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+Dokumentacja GitHuba:
+- https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+- https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository
